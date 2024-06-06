@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS imdb_top_1000(
     Genre CHAR(50),
     IMDB_Rating FLOAT,
     Overview CHAR(1000),
-    Meta_score INT,
+    Meta_score FLOAT,
     Director CHAR(100),
     Star1 CHAR(100),
     Star2 CHAR(100),
