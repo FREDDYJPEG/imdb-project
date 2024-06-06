@@ -1,0 +1,7 @@
+flask
+flask_bcrypt
+flask_login
+Psycopg2-binary
+bs4
+requests
+pandas

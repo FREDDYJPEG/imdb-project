@@ -1,0 +1,29 @@
+{% extends "navbar.html" %} {% block content %}
+<h1>{{ content[0] }}!</h1>
+<div class="imgdiv">
+  <img src="/static/{{content[15]}}" alt="Poster" class="imagebig" />
+</div>
+<div class="tablecontainer">
+  <div class="tableitem">
+    <h4>Details</h4>
+    <p class="card-text"><strong>Title:</strong> {{ content[0] }}</p>
+    <p class="card-text"><strong>Released Year:</strong> {{ content[1] }}</p>
+    <p class="card-text"><strong>Certificate:</strong> {{ content[2] }}</p>
+    <p class="card-text"><strong>Runtime:</strong> {{ content[3] }}</p>
+    <p class="card-text"><strong>Genre:</strong> {{ content[4] }}</p>
+    <p class="card-text"><strong>IMDB Rating:</strong> {{ content[5] }}</p>
+    <p class="card-text"><strong>Meta Score:</strong> {{ content[7] }}</p>
+    <p class="card-text"><strong>Director:</strong> {{ content[8] }}</p>
+    <p class="card-text"><strong>Stars:</strong> {{ content[9] }}, {{ content[10] }}, {{ content[11] }}, {{ content[12] }}</p>
+    <p class="card-text"><strong>No of Votes:</strong> {{ content[13] }}</p>
+    <p class="card-text"><strong>Gross:</strong> {{ content[14] }}</p>
+  </div>
+  <div class="tableitem">
+    <form action="" method="post" class="queryform2">
+      <div class="querybox">
+        <input type="submit" id="buttonAdd" value="Add to Favorites" />
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}

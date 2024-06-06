@@ -1,0 +1,26 @@
+{% extends "navbar.html" %} {% block content %}
+    <h1>IMDB Top 1000 Query!</h1>
+    <div class="cards">
+      {%for i in range(0,length)%}
+      <a href="/movie/{{content[i][16]}}">
+        <div class="card">
+          <img src="/static/{{content[i][15]}}" alt="Avatar" class="image">
+          <div class="container">
+            <h4><b>{{ content[i][0] }}</b></h4>
+            <p class="card-text">Title: {{ content[i][0] }}</p>
+            <p class="card-text">Released Year: {{ content[i][1] }}</p>
+            <p class="card-text">Certificate: {{ content[i][2] }}</p>
+            <p class="card-text">Runtime: {{ content[i][3] }}</p>
+            <p class="card-text">Genre: {{ content[i][4] }}</p>
+            <p class="card-text">IMDB Rating: {{ content[i][5] }}</p>
+            <p class="card-text">Meta Score: {{ content[i][7] }}</p>
+            <p class="card-text">Director: {{ content[i][8] }}</p>
+            <p class="card-text">Stars: {{ content[i][9] }}, {{ content[i][10] }}, {{ content[i][11] }}, {{ content[i][12] }}</p>
+            <p class="card-text">No of Votes: {{ content[i][13] }}</p>
+            <p class="card-text">Gross: {{ content[i][14] }}</p>
+          </div>
+        </div>
+      </a>
+      {%endfor%}
+    </div>
+{% endblock content %}
