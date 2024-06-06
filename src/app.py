@@ -12,7 +12,7 @@ import re
 app = Flask(__name__, static_url_path='/static')
 
 # Set your own database name, username and password
-db = "dbname='imdb_db' user='postgres' host='localhost' password='your_password'"  # Update with your credentials
+db = "dbname='imdb2' user='postgres' host='localhost' password='your_password'"  # Update with your credentials
 conn = psycopg2.connect(db)
 cursor = conn.cursor()
 
